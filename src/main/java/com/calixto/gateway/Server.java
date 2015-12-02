@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public final class Server {
     final static Logger logger = Logger.getLogger(Server.class);
-    static final ApplicationContext context = new ClassPathXmlApplicationContext("ServerConfig.xml");
+    static final ApplicationContext context = new ClassPathXmlApplicationContext("listenRoute.xml");
 
     public static void main(String[] args) throws Exception {
         FrontEnd fConf = (FrontEnd) context.getBean("frontEnd");

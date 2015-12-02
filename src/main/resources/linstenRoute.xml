@@ -11,4 +11,12 @@
               <property name="address" value="localhost"/>
               <property name="port" value="8888"/>
        </bean>
+        <bean id="yamlMap" class="org.springframework.beans.factory.config.YamlMapFactoryBean">
+              <property name="resources">
+                     <list>
+                            <value>classpath:route.yml</value>
+                     </list>
+              </property>
+              <property name="resolutionMethod" value="FIRST_FOUND"/>
+       </bean>
 </beans>
