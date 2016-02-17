@@ -1,6 +1,6 @@
-package com.calixto.gateway;
+package com.proxy.gateway;
 
-import com.calixto.models.QueueElement;
+import com.proxy.models.QueueElement;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.socket.nio.NioSocketChannel;

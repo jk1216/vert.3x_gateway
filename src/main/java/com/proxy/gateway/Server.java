@@ -1,8 +1,8 @@
 
-package com.calixto.gateway;
+package com.proxy.gateway;
 
-import com.calixto.conf.BackEnd;
-import com.calixto.conf.FrontEnd;
+import com.proxy.conf.BackEnd;
+import com.proxy.conf.FrontEnd;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public final class Server {
     final static Logger logger = Logger.getLogger(Server.class);
-    static final ApplicationContext context = new ClassPathXmlApplicationContext("listenRoute.xml");
+    static final ApplicationContext context = new ClassPathXmlApplicationContext("linstenRoute.xml");
 
     public static void main(String[] args) throws Exception {
         FrontEnd fConf = (FrontEnd) context.getBean("frontEnd");
@@ -46,6 +46,7 @@ public final class Server {
             logger.error("Exception occurred while bootstrapping", e);
         }
 
+        logger.info("hi....");
         new GatewaySender(workerGroup, REMOTE_HOST, REMOTE_PORT);
 
         Runtime.getRuntime().addShutdownHook(new Thread() {

@@ -1,4 +1,4 @@
-package com.calixto.gateway;
+package com.proxy.gateway;
 
 import io.netty.channel.Channel;
 import io.netty.util.AttributeKey;

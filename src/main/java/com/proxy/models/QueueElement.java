@@ -1,4 +1,4 @@
-package com.calixto.models;
+package com.proxy.models;
 
 import io.netty.channel.Channel;
 

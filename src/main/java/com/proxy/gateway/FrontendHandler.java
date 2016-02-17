@@ -1,8 +1,8 @@
 
-package com.calixto.gateway;
+package com.proxy.gateway;
 
-import com.calixto.models.GatewayMessage;
-import com.calixto.models.QueueElement;
+import com.proxy.models.GatewayMessage;
+import com.proxy.models.QueueElement;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import org.apache.log4j.Logger;

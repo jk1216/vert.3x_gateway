@@ -1,4 +1,4 @@
-package com.calixto.conf;
+package com.proxy.conf;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -32,6 +32,12 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>2.10.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.16</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -51,7 +57,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.calixto.gateway.Server</mainClass>
+                            <mainClass>com.proxy.gateway.Server</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>conf/</Class-Path>
@@ -65,7 +71,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.calixto.gateway.Server</mainClass>
+                            <mainClass>com.proxy.gateway.Server</mainClass>
                         </manifest>
                     </archive>
                     <descriptors>

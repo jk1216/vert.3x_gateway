@@ -1,6 +1,6 @@
-package com.calixto.codecs;
+package com.proxy.codecs;
 
-import com.calixto.models.GatewayMessage;
+import com.proxy.models.GatewayMessage;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;

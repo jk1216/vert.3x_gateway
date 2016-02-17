@@ -1,4 +1,4 @@
-package com.calixto.models;
+package com.proxy.models;
 
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;

@@ -3,20 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-       <bean id="frontEnd" class="com.calixto.conf.FrontEnd">
-              <property name="port" value="8280"/>
-       </bean>
+    <bean id="frontEnd" class="com.proxy.conf.FrontEnd">
+        <property name="port" value="8280"/>
+    </bean>
 
-       <bean id="backEnd" class="com.calixto.conf.BackEnd">
-              <property name="address" value="localhost"/>
-              <property name="port" value="8888"/>
-       </bean>
-        <bean id="yamlMap" class="org.springframework.beans.factory.config.YamlMapFactoryBean">
-              <property name="resources">
-                     <list>
-                            <value>classpath:route.yml</value>
-                     </list>
-              </property>
-              <property name="resolutionMethod" value="FIRST_FOUND"/>
-       </bean>
+    <bean id="backEnd" class="com.proxy.conf.BackEnd">
+        <property name="address" value="localhost"/>
+        <property name="port" value="18080"/>
+    </bean>
 </beans>

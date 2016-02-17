@@ -1,8 +1,8 @@
 
-package com.calixto.gateway;
+package com.proxy.gateway;
 
-import com.calixto.codecs.ByteToGatewayMessageDecoder;
-import com.calixto.codecs.GatewayMessageToByteEncoder;
+import com.proxy.codecs.ByteToGatewayMessageDecoder;
+import com.proxy.codecs.GatewayMessageToByteEncoder;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 import org.apache.log4j.Logger;

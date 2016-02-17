@@ -1,7 +1,6 @@
-package com.calixto.gateway;
+package com.proxy.gateway;
 
-import com.calixto.models.QueueElement;
-import io.netty.channel.Channel;
+import com.proxy.models.QueueElement;
 
 import java.util.concurrent.ConcurrentLinkedDeque;
 
