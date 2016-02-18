@@ -10,7 +10,11 @@
 
     <packaging>jar</packaging>
     <name>serverGateway</name>
-
+    <properties>
+        <java.version>1.8</java.version>
+        <vertx.version>3.0.0</vertx.version>
+        <jjwt.version>0.4</jjwt.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
@@ -37,6 +41,67 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.16</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-service-proxy</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-rx-java</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-lang-groovy</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-lang-js</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-lang-ruby</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-codegen</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-hazelcast</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-auth-jwt</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <!-- vertx framework end-->
 
     </dependencies>
 
